@@ -87,6 +87,37 @@ Auth interface 공식 문서
 https://firebase.google.com/docs/reference/js/auth.auth.md?authuser=2#auth_interface
 
 
+Firebase로부터 인증 내역을 받아오는 과정을 수행하였음
+영상과 달리 firebase가 버전 9이기 때문에 공식 문서와 영상의 최신 댓글을 참조하여 작성 완료
+
+
+
+2.1 Login Form part One
+
+로그인을 하기 위해 Firebase에서 authentication을 연결하였다.
+	email
+	google
+	github
+를 연결하였고, 특히 github는 OAuth에서 추가해주는 과정이 별도로 있었음
+
+로그인을 하기 위한 form을 만들었고
+값을 여러 기법들을 사용하여 값을 입력하면 화면에 나타나도록 수정하였다.
+
+비구조화 할당 문법에서 Object내의 변수를 할당받는 방법을 새로 익혔음
+아래와 같은 event object를
+event = {
+	target:{
+		name:"Email",
+		value:"value"
+	}
+}
+
+이 문법을 통해서 name과 value라는 변수로 꺼내올 수 있다
+const {target:{name,value}} = event;
+
+https://learnjs.vlpt.us/useful/06-destructuring.html#:~:text=%EC%9D%B4%EB%B2%88%EC%97%94%20%EB%91%90%EB%B2%88%EC%A7%B8%20%EB%B0%A9%EB%B2%95%2C%20%ED%95%9C%EB%B2%88%EC%97%90%20%EB%AA%A8%EB%91%90%20%EC%B6%94%EC%B6%9C%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95%EC%9D%84%20%EC%95%8C%EC%95%84%EB%B3%B4%EA%B2%A0%EC%8A%B5%EB%8B%88%EB%8B%A4
+
+
 
 
 
