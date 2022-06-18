@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import App from './components/App';
 
 // export default로 initializeApp(firebaseConfig)를 호출했기 때문에
 // import firebase가 아니라 import ddd로 해도 무관함
