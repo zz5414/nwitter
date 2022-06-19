@@ -132,6 +132,26 @@ firebase의 createUserWithEmailAndPassword, signInWithEmailAndPassword을 사용
 firebase에 등록이 되는지 확인한다
 
 
+2.4 Log In
+로그인을 했는데 로그인 창이 그대로인 상황을 해결
+useState에서 auth인증 된 결과를 가져오는데 로딩 이전에 불러와서 그런것
+
+기다린 다음에 넣어주기 위해 useEffect를 사용
+
+onAuthStateChanged
+https://firebase.google.com/docs/reference/js/auth.auth.md?authuser=2#authonauthstatechanged
+
+
+initializing이 끝난 뒤에 로그인창이나 로그인이 된 home을 보여주고자 함
+newAccount를 제대로 사용하지 않았는데 toggleAccount라는 함수로 문자열을 클릭해서
+CreateAccount/Sign In 두가지를 선택해서 할 수 있도록 수정하였음
+setNewAccount가 잘 이해가 안됨
+
+setNewAccount((prev) => !prev) ??????
+
+
+
+
 
 
 
