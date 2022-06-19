@@ -118,6 +118,20 @@ const {target:{name,value}} = event;
 https://learnjs.vlpt.us/useful/06-destructuring.html#:~:text=%EC%9D%B4%EB%B2%88%EC%97%94%20%EB%91%90%EB%B2%88%EC%A7%B8%20%EB%B0%A9%EB%B2%95%2C%20%ED%95%9C%EB%B2%88%EC%97%90%20%EB%AA%A8%EB%91%90%20%EC%B6%94%EC%B6%9C%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95%EC%9D%84%20%EC%95%8C%EC%95%84%EB%B3%B4%EA%B2%A0%EC%8A%B5%EB%8B%88%EB%8B%A4
 
 
+2.3 Creating Account
+	Promise
+	await
+	async
+
+이메일 기반 계정 만들기
+https://firebase.google.com/docs/auth/web/password-auth?authuser=2&hl=ko#create_a_password-based_account
+
+
+newAccount라는 useState hook을 이용해서 submit버튼을 CreateAccount또는 LogIn 중 하나를 선택한다
+firebase의 createUserWithEmailAndPassword, signInWithEmailAndPassword을 사용하여 계정을 만들고
+firebase에 등록이 되는지 확인한다
+
+
 
 
 
