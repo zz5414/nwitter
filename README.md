@@ -150,6 +150,16 @@ setNewAccount가 잘 이해가 안됨
 setNewAccount((prev) => !prev) ??????
 
 
+2.5 Social Login
+popup, redirect 두 가지 방법으로 로그인 가능
+redirect는 작업이 많다고 popup으로 
+
+SignInWithPopup()
+https://firebase.google.com/docs/reference/js/auth.md?authuser=2#signinwithpopup
+example guide
+https://firebase.google.com/docs/auth/web/google-signin?authuser=0
+
+구글과 github로 로그인을 구현하였음 와 개쩜
 
 
 
