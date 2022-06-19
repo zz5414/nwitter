@@ -161,6 +161,35 @@ https://firebase.google.com/docs/auth/web/google-signin?authuser=0
 
 구글과 github로 로그인을 구현하였음 와 개쩜
 
+2.6 Log Out
+navigation을 만들어서 프로필이나 홈으로 가는 걸 만들 예정
+네비게이션이 먼지 잘 모름 -> 메뉴바를 만드는 것이라고 생각하면 간편
+
+
+로그아웃 버튼을 만들어서 적용하였음
+
+그러나 로그아웃 해도 url이 바뀌지 않아서 화면이 이상함
+
+redirect를 사용
+https://v5.reactrouter.com/web/api/Redirect
+
+이거 말고 useHistory을 사용해서 가능
+https://v5.reactrouter.com/web/api/Hooks/usehistory
+이게 훨씬 직관적임
+
+
+작업 중에 Navigation이 정상작동하지 않았다
+profile이나 home을 눌러도 새로고침을 해야 적용 되는 것
+
+같이 공부하는 상황이라 대부분의 에러는 다 처리가 가능하네...
+React 18과 react-router-dom 5.3.3이전 버전에는 호환성 문제가 있다고 함
+강의 페이지에서는 5.3.0을 설치하라고 되어 있어 호환이 되지 않았던 것
+아래 링크를 참조하여 5.3.3을 설치하였더니 정상 동작하였음
+https://stackoverflow.com/questions/71832720/link-tag-inside-browserrouter-changes-only-the-url-but-doesnt-render-the-compo#:~:text=Bugfix%20was%20merged%20into%20v5.3.3,S%20react%2Drouter%2Ddom%405.3.3
+
+
+firebase 공식문서 상 로그아웃 하는 방법
+https://firebase.google.com/docs/auth/web/email-link-auth?authuser=0#next_steps
 
 
 
